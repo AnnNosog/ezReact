@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+ul, p {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: lucida console;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: no-repeat center/100% url("../assets/859458.jpg");
+}
+
+.card-deck {
+  margin: 0 10px;
+}
