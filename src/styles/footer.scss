@@ -3,7 +3,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: #343a40;
   height: 60px;
@@ -22,19 +22,6 @@ footer {
       background-color: #9a9da0;
       margin-left: 5px;
       position: relative;
-
-      &:hover {
-        background-color: #ded5d5;
-      }
-
-      img {
-        width: 25px;
-        height: 25px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
     }
   }
 }
@@ -44,13 +31,8 @@ body {
   padding-bottom: 80px;
 }
 
-@media screen and(max-width: 424px) {
+@media screen and(max-width: 575px) {
   footer {
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-
-    ul {
-      padding: 0;
-    }
+    position: static;
   }
 }

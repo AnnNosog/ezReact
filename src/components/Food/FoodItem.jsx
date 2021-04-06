@@ -8,7 +8,6 @@ const customStyles = {
         left: '50%',
         right: 'auto',
         bottom: 'auto',
-        marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
         background: '#696969'
     }
@@ -37,13 +36,14 @@ const FoodItem = ({variant, src, title = '', cost = 0}) => {
 
     const pay = () => {
         console.log(JSON.stringify(`${title} cost:${cost} count:${count} sum:${cost * count}`))
+
     };
     return (
         <>
             <Card
                 bg={variant.toLowerCase()}
                 text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-                style={{width: '18rem', marginTop: '50px'}}
+                style={{marginTop: '50px'}}
                 className="mb-2"
             >
                 <Card.Header>{title}</Card.Header>
@@ -64,7 +64,6 @@ const FoodItem = ({variant, src, title = '', cost = 0}) => {
                 <Card
                     bg={variant.toLowerCase()}
                     text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-                    style={{width: '18rem'}}
                     className="mb-2"
                 >
                     <Card.Header>{title}</Card.Header>
